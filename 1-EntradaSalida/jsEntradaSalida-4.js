@@ -4,6 +4,8 @@
 */
 function Mostar()
 {
-	
+	var dato
+	 dato = prompt ("elDato").value;
+		alert (dato)
 }
 
