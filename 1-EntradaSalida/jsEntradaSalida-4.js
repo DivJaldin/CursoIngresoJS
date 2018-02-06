@@ -5,7 +5,8 @@
 function Mostar()
 {
 	var dato
-	 dato = prompt ("elDato").value;
+	 dato = prompt ("elDato");
+	 prompt = getElementId("elDato").value;
 		alert (dato)
 }
 
