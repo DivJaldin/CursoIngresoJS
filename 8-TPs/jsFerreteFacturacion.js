@@ -5,29 +5,41 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
-    var precioUno
-    var precioDos
-    var precioTres
-    var sumar
+    var PrecioUno;
+    var PrecioDos;
+    var PrecioTres;
+    var Sumar;
     
-        precioUno = document.getElementById ("precioUno").value;
-        precioUno = parseInt ("precioUno");
+        PrecioUno = document.getElementById ("PrecioUno").value;
+        PrecioUno = parseInt (PrecioUno);
 
-        precioDos = document.getElementById ("precioDos").value;
-        precioDos = parseInt ("precioDos");
+        PrecioDos = document.getElementById ("PrecioDos").value;
+        PrecioDos = parseInt (PrecioDos);
 
-        precioTres = document.getElementById ("precioTres").value;
-        precioTres = parseInt ("precioTres");
+        PrecioTres = document.getElementById ("PrecioTres").value;
+        PrecioTres = parseInt (PrecioTres);
 
-        sumar = precioUno + precioDos + precioTres;
+        Sumar = PrecioUno + PrecioDos + PrecioTres;
 
-    alert ( "la suma da " + sumar)
+    alert ( "la suma da " + Sumar)
 
 
 }
 function Promedio () 
 {
-	
+        PrecioUno = document.getElementById ("precioUno").value;
+        PrecioUno = parseInt (PrecioUno);
+	    
+        PrecioDos = document.getElementById ("PrecioDos").value;
+        PrecioDos = parseInt (PrecioDos);
+
+        PrecioTres = document.getElementById ("PrecioTres").value;
+        PrecioTres = parseInt (PrecioTres);
+
+        Promedio = (PrecioDos + PrecioDos + PrecioTres)/ 3 ;
+        document.getElementById ("resultado").value = resultado
+
+
 }
 function PrecioFinal () 
 {
