@@ -10,11 +10,12 @@ de no ser igual se debe informar si “falta…”  para llegar al número secre
 var numeroSecreto; 
 var contadorIntentos;
 var contador=0
+var numero
 
 function comenzar()
-{
-  numeroSecreto = Math.floor ((Math.random ()* (101-1)+1))
-  console.log (numeroSecreto);
+{ var contador=0
+  document.getElementById ("numero").value = numero
+  numeroSecreto = Math.floor ((Math.random ()* (101-1)+1));
 	//Genero el número RANDOM entre 1 y 100
 	 alert ("numeroSecreto")
 		//alert(numeroSecreto );
@@ -24,20 +25,21 @@ function comenzar()
 
 function verificar()
 {
-  contador= contador+1
-  var numero
-	  numero = document.getElementById("numero")
-    promt = contador
+  var numero = contador+1;
+  
+	  document.getElementById("numero").value;
 
-    if (numero = numeroSecreto)
+    if (numero == numeroSecreto && contador==1)
     {
       alert("usted es un ganador!!! y en solo" + contador)
     }
-    if else (numero <= numeroSecreto)
+    if (contador<10)  
+    {}
+    else if (numero >= numeroSecreto)
     {
-      alert ("fata")
+      alert ("fata" + contador )
     }
-    if else (numero >= numeroSecreto)
+    else if (numero <= numeroSecreto)
     {
       alert ("se pasó" + contador)
     }
