@@ -42,17 +42,17 @@ alert (laHora);
                 alert ("es la madrugada");
             {break};
         }     
-        case (laHora>22)
+
+       if (0>"laHora">22)
              {
-                alert ("falso");
-                {break}
+                alert ("falso")
              }
-        case (laHora < 0)
-            {
-                alert ("falso");
-                {break}
+                
+        else (0<"laHora"<22)
+            { 
+                alert (lahora)
             }
-            
+             
 	
 
 }//FIN DE LA FUNCIÓN
