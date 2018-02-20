@@ -12,7 +12,7 @@ alert (laHora);
             case "10":
             case "11":
                 alert ("es la mañana");
-            {break};
+            break;
 
             case "12":
             case "13":
@@ -22,7 +22,7 @@ alert (laHora);
             case "17":
             case "18":
                 alert ("es la tarde");
-            {break};
+            break;
 
             case "19":
             case "20":
@@ -30,7 +30,7 @@ alert (laHora);
             case "22":
             case "23":
                 alert ("es la noche");
-            {break};
+            break;
 
             case "0":
             case "1":
@@ -40,18 +40,12 @@ alert (laHora);
             case "5":
             case "6":
                 alert ("es la madrugada");
-            {break};
-        }     
-
-       if (0>"laHora">22)
-             {
+            break;
+        
+            default: 
                 alert ("falso")
-             }
-                
-        else (0<"laHora"<22)
-            { 
-                alert (lahora)
-            }
+            break;
+        }
              
 	
 
