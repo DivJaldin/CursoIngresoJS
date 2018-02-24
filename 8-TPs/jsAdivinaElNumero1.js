@@ -13,16 +13,14 @@ var numeroIngresado;
 
 function comenzar() 
 {
-  
-    numeroSecreto=Math.floor((Math.random () * 100 ) +1);
-    console.log (numeroSecreto);
-    
+
+    numeroSecreto=Math.floor((Math.random ()* 100 ) +1);
     intentos=0;
 
 }
 
 function verificar() 
-  {
+{
 
     numeroIngresado = document.getElementById("numero").value;
     // cuento intentos
@@ -32,20 +30,18 @@ function verificar()
     {
       alert ("usted es un ganador. y en solo " + intentos + " intentos");
       document.getElementById("intentos").value = "Ganaste despues de " + intentos + " Intentos";
-      intentos=0
+      intentos=0;
     }
     else
-    {
-      console.log ("falta para llegar al numero secreto " + intentos + "Intentos");
-    }
-    // verifico si me pase o no del numero secreto
+    
       if (numeroIngresado > numeroSecreto)
       {
-        alert ("Te pasate del numero secreto");
-
+        alert ("Te pasate del numero secreto. "+ intentos + " Intentos ");
+        //alert ("Te pasate del numero secreto");
       }
       else if (numeroIngresado < numeroSecreto)
       {
-        alert ("Todavia falta para el numero secreto");
+        alert ("Todavia falta para el numero secreto. "+ intentos + " Intentos ");
+        //alert ("Todavia falta para el numero secreto");
       }
-    }
+}

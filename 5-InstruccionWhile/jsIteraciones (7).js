@@ -1,39 +1,36 @@
-function Mostrar()
+	function Mostrar()
 {
 
 	var contador=0;
 	var acumulador=0;
-	var respuesta="si",msj;
-	var msjOk ="Ingrese un numero o cancelar";
-	var msjError = "Error: El valor ingresado  tiene que ser mero";
-	 msj = msjOk;
+	var respuesta=true;
+ 	var numero;
 
-while (true)
-{
-	// pido numero
-	respuesta= prompt (msj);
-	// seteo mensaje
-	msj = msjOk;
-	// verifico btn cancelar
-	if (respuesta ==null) 
-	break;
-	respuesta = parseInt (respuesta);
-	// Verifico que sea un numero
-	if (isNaN (respuesta))
-		{
-			msj = msjError;
-			continue;
-		}
-	//Hago las operaciones
-		acumulador += respuesta;
-		contador++;
-}
-document.getElementById ('suma').value = acumulador;
-document.getElementById ('promedio').value = acumulador/contador;
+	
+	while (respuesta == true)
+	{
+		numero = prompt ("ingrese el numero");
+		numero = parseInt (numero);
 		
-}
+		while (numero <1 || numero>10)
+		{
+			numero = prompt ("Error. reingrese un numero");
+			numero = parseInt (numero);
+		}
 
-// no usar acumulador+=respuesta
-//FIN DE LA FUNCIÓN
-//respuesta = respuesta + numero
-//promedio= respuesta/contador;
+		acumulador+=numero;
+		
+		contador = contador +1;
+		respuesta = confirm ("desea ingresar otro numero?");
+		//respuesta = prompt (...)
+		
+		var contador = 0;
+		var positivo = 0;
+		var negativo = 1;
+	
+	}
+res = acumulador/contador;
+document.getElementById('suma').value=acumulador;
+document.getElementById('promedio').value=acumulador/5;
+
+}
