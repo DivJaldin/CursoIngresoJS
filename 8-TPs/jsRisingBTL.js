@@ -1,11 +1,11 @@
 /*RISING BTL. Empresa dedicada a la toma de datos para realizar estadísticas y censos nos pide realizar una carga de datos validada e ingresada por ventanas emergentes solamente (para evitar hacking y cargas maliciosas) y luego asignarla a cuadros de textos. 
 12.   Los datos requeridos son los siguientes:
-A.	Edad, entre 18 y 90 años inclusive.
-B. Sexo, “M” para masculino y “F” para femenino
+A.	edad, entre 18 y 90 años inclusive.
+B. sexo, “M” para masculino y “F” para femenino
 C.	Estado civil, 1-para soltero, 2-para casados, 3-para divorciados y 4-para viudos
-D.	Suledo bruto, no menor a 8000.
-E.	Número de Legajo, numérico de 4 cifras, sin ceros a la izquierda.
-F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para nacionalizados.
+D.	sueldo bruto, no menor a 8000.
+E.	Número de legajo, numérico de 4 cifras, sin ceros a la izquierda.
+F.	nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para nacionalizados.
  */
 
 // var cadena = "cadena".toLowerCase();
@@ -13,12 +13,12 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
 
 function ComenzarIngreso () 
 {
-    var Edad;
-    var Sexo;
-    var Suledo;
-    var EstadoCivil;
-    var Legajo;
-    var Nacionalidad;
+    var edad;
+    var sexo;
+    var sueldo;
+    var estadoCivil;
+    var legajo;
+    var nacionalidad;
 {
     var contadorM= 0
         for (var i=0; i < 1 ; i++)
@@ -34,12 +34,12 @@ function ComenzarIngreso ()
 }
 function pedirDatos ()
 {
-    pedirEdad();
-    pedirSexo();
+    pediredad();
+    pedirsexo();
     pedirEstado();
     pedirSueldo();
-    pedirLegajo();
-    pedirNacionalidad ();
+    pedirlegajo();
+    pedirnacionalidad ();
 
     asignarDatos();
 }
@@ -47,85 +47,85 @@ function pedirDatos ()
 /////////////////////////////////////////////////
 function asignarDatos()
 {
-    document.getElementById ("Edad").value = Edad;
-    document.getElementById ("Sexo").value = Sexo;
+    document.getElementById ("edad").value = edad;
+    document.getElementById ("sexo").value = sexo;
     document.getElementById ("Estado").value = Estado;
     document.getElementById ("Sueldo").value = Sueldo;
-    document.getElementById ("Legajo"),value = Legajo,
-    document.getElementById ("nacionalidad").value = Nacionalidad;
+    document.getElementById ("legajo"),value = legajo,
+    document.getElementById ("nacionalidad").value = nacionalidad;
 }
 /////////////////////////////////////////////////////
-function pedirEdad ()
+function pediredad ()
 {
     do
     {
-        Edad = prompt ("ingrese edad entre 18 y 90 años");
-        Edad = parseInt (Edad)
+        edad = prompt ("ingrese edad entre 18 y 90 años");
+        edad = parseInt (edad)
     }
-    while ( Edad >= 18 || Edad <=90 || isNaN (Edad));
+    while ( edad >= 18 || edad <=90 || isNaN (edad));
 }
 //////////////////////////////////////////////////// 
-function pedirSexo ()
+function pedirsexo ()
 {
     do
     {
-        Sexo = prompt ("ingresar sexo, m o f");
+        sexo = prompt ("ingresar sexo, m o f");
     }
-    while (Sexo.toLowerCase () != "f" && Sexo.toLowerCase ()!="M")
+    while (sexo.toLowerCase () != "f" && sexo.toLowerCase ()!="M")
     
 }
 /////////////////////////////////
 function pedirSueldo ()
 {
-    if ( Suledo>=8000){}
+    if ( sueldo>=8000){}
 }
 ///////////////////////////////////
-function pedirEstadoCivil ()
+function pedirestadoCivil ()
 {
-   switch ( EstadoCivil )
+   switch ( estadoCivil )
    {
        case 1:
-            EstadoCivil = "soltero";
+            estadoCivil = "soltero";
             break;
        case 2:
-            EstadoCivil = "casado";
+            estadoCivil = "casado";
             break;
        case 3:
-            EstadoCivil = "divorciado";
+            estadoCivil = "divorciado";
             break;
        case 4:
-            EstadoCivil = "viudo";
+            estadoCivil = "viudo";
             break;
    }
 }
 ///////////////////////////////////
-function pedirLegajo ()
+function pedirlegajo ()
 {
     do
     {
-        Legajo = document.getElementById ("Legajo").value;
-        Legajo = paseInt (Legajo);
+        legajo = document.getElementById ("legajo").value;
+        legajo = paseInt (legajo);
     }
-    while ( legajo < 1000|| isNaN (Legajo));
+    while ( legajo < 1000 || isNaN (legajo));
 }
 ////////////////////////////////////
-function pedirNacionalidad ()
+function pedirnacionalidad ()
 {
     do
     {
-        Nacionalidad = prompt ("Nacionalidad: ingrese -A- si es argentino, ingrese -E-  si es extrangero, ingrese -N- si es nacionalizado").value;
+        nacionalidad = prompt ("nacionalidad: ingrese -A- si es argentino, ingrese -E-  si es extrangero, ingrese -N- si es nacionalizado").value;
     }
     while (nacionalidad.toLowerCase () != "a" && nacionalidad.toLowerCase () !="e" && nacionalidad.LowerCase () !="e")
-    switch (Nacionalidad)
+    switch (nacionalidad)
         {
             case a:
-                Nacionalidad = "argentino";
+                nacionalidad = "argentino";
                 break;
             case e:
-                Nacionalidad = "extranjero";
+                nacionalidad = "extranjero";
                 break;
             case n:
-                Nacionalidad = "nacionalizado";
+                nacionalidad = "nacionalizado";
                 break;
     }
     }
