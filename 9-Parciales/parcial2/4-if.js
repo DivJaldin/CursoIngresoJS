@@ -7,6 +7,49 @@ function Mostrar()
 {
 	var numeroUno;
 	var numeroDos;
+	var resultado;
+
+	numeroUno = prompt ("Por favor ingrese el primer numero.");
+	numeroDos = prompt ("Por favor ingrese el segundo numero.");
+
+	numeroUno = parseInt (numeroUno);
+	numeroDos = parseInt (numeroDos);
+
+	if ( numeroUno == numeroDos )
+	{
+		resultado = numeroUno * numeroDos;
+	}
+
+	else if ( numeroUno > numeroDos )
+	{
+		resultado = numeroUno - numeroDos;
+	}
+	else
+	{
+		resultado = numeroUno + numeroDos;
+	}
+	//CONDICIONALES ANIDADOS
+	document.write ("el resultado es: " + resultado );
+
+/* OTRA FORMA MAS CORTA DE REPRESENTAR LAS CONDICIONES ELSE/IF :   
+	if ( numeroUno == numeroDos )
+	{
+		resultado = numeroUno * numeroDos;
+	}
+	else
+	{
+		if ( numeroUno > numeroDos )
+		{
+			resultado = numeroUno - numeroDos;
+		}
+		else
+		{
+			resultado = numeroUno + numeroDos;
+		}
+
+	}
+/*	var numeroUno;
+	var numeroDos;
 	var multiplica;
 	var resta;
 	var suma;
@@ -29,6 +72,6 @@ function Mostrar()
 		suma = numeroUno + numeroDos;
 		document.white (suma);
 	}
-	
+	*/
 }
 

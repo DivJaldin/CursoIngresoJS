@@ -10,7 +10,7 @@ function Mostrar()
 	
 	elIva = importe *0.21;
 	conIva = importe + elIva;
-	alert("importe final sumándole el IVA (21%) es "+ conIva);
+	document.getElementById ("importe").value =  conIva;
 	
 }
 

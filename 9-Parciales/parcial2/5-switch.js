@@ -3,7 +3,23 @@
  //de lo contrario informar por alert “extraño enero y febrero!!!” 
 function Mostrar()
 {
-	var mesDelAño = prompt ("mesDelAño");
+	var mesDelAño;
+	mesDelAño = prompt("mesDelAño");
+	mesDelAño = toLowerCase("mesDelAño"); 
+	/* toLowerCase() 
+	/* toUpperCase ()*/
+	switch (mesDelAño)
+	{
+		case "Enero":
+		case "Febrero":
+		alert ("Estamos el veranitooo!!!");
+			break;
+		/* utilizacion del DEFAULT PARA EVITAR ESCRIBIR UNA CADENA*/
+		default:
+			alert("Extraño Enero y Febrero");
+	}
+}
+	/* var mesDelAño = prompt ("mesDelAño");
 	switch (mesDelAño) {
 		case "Enero":
 		case "Febrero":
@@ -22,6 +38,7 @@ function Mostrar()
 		case "Diciembre":
 		alert ("extraño enero y febrero")
 			break;
+			
 	}
 }
-
+*/
