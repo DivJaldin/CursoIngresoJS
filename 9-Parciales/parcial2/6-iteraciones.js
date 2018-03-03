@@ -8,6 +8,7 @@ function Mostrar()
 	var maximoImporte;
 	var minimoImporte;
 	var flag=false; 
+	// en caso de quere ver el DIA maximo y MINIMO 
 	var maximoDia;
 	var minimoDia;
 	//bucle de dias 7//

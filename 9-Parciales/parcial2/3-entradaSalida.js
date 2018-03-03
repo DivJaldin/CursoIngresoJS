@@ -4,6 +4,7 @@ function Mostrar()
 	var ancho;
 	var largo;
 	var perimetro;
+	var alambreT;
 	ancho = document.getElementById ("ancho").value;
 	largo = document.getElementById ("largo").value;
 	ancho = parseInt ("ancho");
@@ -26,6 +27,7 @@ function Mostrar()
 	perimetro = ancho * 2 + largo *2;
 	alambreTotal = perimetro *6
 	alert("La cantidad de alambre necesaria es " + alambreTotal);
+	o document.white (sobre escrube en una pagina en blanco)
 	*/
 }
 

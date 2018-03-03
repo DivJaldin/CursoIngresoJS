@@ -60,3 +60,31 @@ c) la cantidad de varones que su nota haya sido mayor o igual a 6.
 
 }
 
+/*
+	
+		if ( flag==0 || nota < minimo )
+		{
+			minimo = nota;
+			flag = 1 ;
+		}
+	
+		if (sexo == "m" && nota >=6)
+		{
+				acumNotas = acumNotas + nota;
+			contVarones++;
+		}
+
+		promedio = acumNotas / cont variones ;
+		if (contVarones !==0 )
+
+		alert ("Promedio es : "+ promedio + " , el minimo : " + minimo + " y la cantidad de variones " + contVarones)
+		else
+		{
+			alert ("no hay alumnos para calcular el primedio")
+		}
+}
+
+}
+
+
+

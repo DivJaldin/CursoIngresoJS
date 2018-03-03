@@ -5,7 +5,7 @@ function Mostrar()
 {
 	var mesDelAño;
 	mesDelAño = prompt("mesDelAño");
-	mesDelAño = toLowerCase("mesDelAño"); 
+	//mesDelAño = toLowerCase("mesDelAño"); 
 	/* toLowerCase() 
 	/* toUpperCase ()*/
 	switch (mesDelAño)
